@@ -1,0 +1,136 @@
+#myTable {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#myTable td {
+    width: 48px;
+    height: 48px;
+    border: 1px solid black;
+}
+
+#dateInput {
+    padding: 8px 12px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-family: cursive, math
+}
+
+#h1_task1, #h1_task2, #h1_task3{
+    margin: 0 auto;
+    font-family: cursive, math;
+}
+
+.container {
+    text-align: center;
+}
+
+.shapes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.shape {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#triangle {
+    background-color: #598ef9;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#circle {
+    background-color: #598ef9;
+    border-radius: 50%;
+}
+
+#square {
+    background-color: #598ef9;
+}
+
+.baskets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.basket {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.triangle_Basket, .circle_Basket, .square_Basket {
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+    border-bottom: 100px solid #9459f9;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    display: inline-block;
+    position: relative;
+    transform: rotateX(180deg);
+}
+
+.triangle_Basket span, .circle_Basket span, .square_Basket span {
+    position: absolute;
+    top: 125px;
+    transform: translate(-50%, -50%) scaleY(-1);
+    background-color: rgba(255, 255, 255, 0.51);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.triangle_Basket span::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 28.16px solid #598ef9;
+    position: absolute;
+    top: 175%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle_Basket span::after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-color: #598ef9;
+    border-radius: 50%;
+    position: absolute;
+    top: 225%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.square_Basket span::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #598ef9;
+    position: absolute;
+    top: 225%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    margin-top: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
